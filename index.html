@@ -2,26 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Drushots - Ginger Shots</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DruShots - Ginger Shots</title>
   <style>
     body {
-      background-color: #fffbe6;
-      color: #333;
       font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fffbe6;
+    }
+    header {
+      background-color: #ffb347;
+      padding: 20px;
       text-align: center;
-      padding: 100px;
+      color: #fff;
     }
-    h1 {
-      color: #e67e22;
+    section {
+      padding: 20px;
     }
-    p {
-      font-size: 18px;
+    .flavours {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .order-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #25D366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Drushots!</h1>
-  <p>Natural Ginger Shots to boost Immunity, Energy, and Digestion.</p>
-  <p>Website under development – stay tuned!</p>
+
+  <header>
+    <h1>Welcome to DruShots!</h1>
+    <p>Natural Ginger Shots to boost Immunity, Energy & Digestion</p>
+  </header>
+
+  <section>
+    <h2>Our Products</h2>
+    <div class="flavours">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150?text=Lemon+Ginger" alt="Lemon Ginger">
+        <h3>Lemon Ginger</h3>
+        <p>₹50 per shot</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150?text=Mint+Ginger" alt="Mint Ginger">
+        <h3>Mint Ginger</h3>
+        <p>₹50 per shot</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150?text=Turmeric+Ginger" alt="Turmeric Ginger">
+        <h3>Turmeric Ginger</h3>
+        <p>₹60 per shot</p>
+      </div>
+    </div>
+    <a class="order-btn" href="https://wa.me/919999999999" target="_blank">Order on WhatsApp</a>
+  </section>
+
+  <section>
+    <h2>About Us</h2>
+    <p>DruShots is a natural drink startup started to make daily health boosting easy. Our shots are made from fresh ingredients with no added chemicals.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 DruShots. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
